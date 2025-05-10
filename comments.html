@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="websystems.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar_left">
+            <a href="index.html"><img src="images/robin.png" alt="logo"></a>
+            <!-- Free-to-use sticker of "Robin", Honkai: Star Rail from Hoyoverse -->
+            <div><a href="index.html">Index</a></div>
+            <div><a href="past.html">Past</a></div>
+            <div><a href="future.html">Future</a></div>
+            <div><a class="active" href="comments.html">Comments</a></div>
+        </div>
+        <div class="navbar_right">
+            <span class="medium">&#9993;</span>
+            <div class="small">kntheboi@gmail.com</div>
+        </div>
+    </div>
+    <div id="comments_content" class="content">  
+        <div id="comments_title">
+            <img id="girl" src="images/girl.gif" alt="girl">
+            <!-- https://www.pinterest.com/pin/718957527995266328/ -->
+             <img id="scene" src="images/scene.png" alt="scene">
+        </div>
+        <div id="ENF103">
+            <h2>Summary</h2>
+            <p>My initial approach was a dark-theme website that has multiple bult-in functions, as I read through WebAss bits by bits, I realized there were too many prohibitions that limit lots of what I already had in mind. I understand that it is for the sake of simplicty, which is why I switched to create a portfolio-style website. There have been at least 10 prototypes, as each one pass by, I also believed my knowledge and practical-programming skill in HTML and CSS has also gotten better.</p>
+            <div id="technical_aspect">
+                <h2>Technical Aspects</h2>
+                <h3>Navigation</h3>
+                <p>The idea here is a sticky navigation that sticks to the top of the website. Any technical implementations here should be fairly simple. With the use of <span class="cxx">flex</span> and <span class="cxx">justify-content</span>, the layout of the navigation bar is neat and tidy, evenly-spaced between buttons. Although there are still some unpleasant issues with it, I personally believed that it should be suffice. If you look carefully, there should be some subtle features, current page highlighted by an underline dash, the <span class="cxx">font-size</span> is slightly bigger, there is also the implementation of <span class="cxx">transition-duration</span> in which the button change color on <span class="cxx">:hover</span></p>
+                <h3>Home/Index Page</h3>
+                <p>For the layout of this page, as I already mentioned, it is supposed to be a simple personal portfolio-website, so I went with <span class="cxx">flex</span> layout, <span class="cxx">flex-direction: column</span> as flex is great with one-dimensional axis layout, this is also applied to the other three pages, including this one. Well first of, we have multiple <span class="cxx">containers</span> that group all child elements together, and for each child element, I can work on the y or x-axis however I want. There are pictures, scaled to be dynamic, background is an image with <span class="cxx">fixed</span> attachment, giving it a mesmerizing feel when scrolling. And then there is a ubuntu/linux command prompt, I thought this would be a really cool idea, to capture the essence of what I do: programming, this can also be upgraded later on to be more interactive, maybe functional, maybe allowing user to input something like <span class="cxx">cat certain_file.txt</span> and it would switch out new texts. I also implemented some GIFs, I hope it's not too much.</p>
+                <h3>Past Page</h3>
+                <p>As there is no specific requirement for the Future and Past Page, I used a simple layout for both. For the 'Past' page, there is a twist with the banner img/GIF, as it will change at certain resolution, this was initially a fix to the GIF resolution as it was not big enough to stretch out for the desktop resolution, and I decided to make it a feature afterwards.</p>
+                <h3>Future Page</h3>
+                <p>It uses the same layout as 'Past' page.</p>
+            </div>
+            <div id="aesthetics_aspect">
+                <h2>Aesthetics Aspects</h2>
+                <h3>Clarity, Navigability and Visual Appeal</h3>
+                <p>As mentioned, I used a <span class="cxx">flex</span> and <span class="cxx">sticky</span> navigation bar on top for navigation. Simple and easy to use, with interactive buttons and also stationary, no need to scroll up and down.<br>
+                    The visual appeal ways I implemented can be found through subtle details, like a pseudo-animation for the navigation buttons, interactive images. The <span class="cxx">navbar</span> and <span class="cxx">footer</span> are styled with <span class="cxx">shadow-box</span>, the websites use dark theme similar to the "MS Command Prompt". Behind the <span class="cxx">background-image</span> I also made the color black to reduce flashing an blinking when moving to another page.<br>
+                    There are texts and titles for every section, so it should be easy to figure out where you are at.
+                </p>
+                <h3>Readability</h3>
+                <p>For the font, I interchange between '<span class="cxx">Comic Sans MS</span>' and '<span class="cxx">Consolas</span>'. Comic Sans MS is just a personal preference, used to replace Consolas to prevent it from being over used and to enhance readability as Consolas is not too great at it. As for '<span class="cxx">Consolas</span>', it is a choice in order to keep the theme, idea and spirit of a programmer, of course the <span class="cxx">font-size</span> has been set to be readable and visually appealed.<br>
+                    As the pages are dark theme, I went with the 'beige' color on some texts as pure white would have been too bright.
+                    There are also some orange-highlighted text to stay inline with the color scheme 'Black-White-Orange'.
+                </p>
+                <h3>Responsiveness</h3>
+                <p>This was the most annoying aspect, cost me 3 prototypes, but <span class="cxx">@media queries</span> and <span class="cxx">flex</span> came to save the day!<br>
+                    I had made sure to make the websites dynamic by setting <span class="cxx">width-height</span> with <span class="cxx">vw-vh</span>(% to screen size) and combined it all with the flex-layout, all together with settings for 2 different breakpoint of resolution.
+                    And the websites are now responsive!
+                </p>
+            </div>
+            <div id="accessibility">
+                <h2>Accessibility</h2>
+                <p>The webpages are accessible and cater to all types of user. Even to those who are color-blinded or vulnerable to seizures. As the two main color are white and black, both of which are mono colors, there should be no problem for anyone in reading the texts. The websites also have subtle features as mentioned to ease the any known flashing or blinking too.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <ul id="contact_me">
+                <li>Contact me:</li>
+                <li>Discord: kn_theboi</li>
+                <li>Email: <a class="hyperlink" href="mailto:kntheboi@gmail.com">kntheboi@gmail.com</a></li>
+            </ul>
+            <ul id="footer_others">
+                <li class="hyperlink">Terms of Use</li>
+                <li class="hyperlink">Privacy Policy</li>
+            </ul>
+        </div>
+        <p>Copyright &#169; 2024 - Le Ngoc Khoi Nguyen</p>
+    </div>
+</body>
+</html>
